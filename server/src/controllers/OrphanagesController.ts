@@ -1,14 +1,17 @@
 import { Request, Response } from 'express';
 import { getRepository } from 'typeorm'; // O typeorm utiliza o repository pattern
 import Orphanages from '../models/Orphanage';
+import orphanageView from '../views/orphanage_view';
 
 export default {
     async index(request: Request, response: Response) {
         const orphanagesRepository = getRepository(Orphanages);
 
-        const orphanage = await orphanagesRepository.find();
+        const orphanages = await orphanagesRepository.find({
+            relations: ['images'] // Procura relacionamentos no campo image do model de orfanatos
+        });
 
-        return response.json(orphanage);
+        return response.json(orphanageView.renderMany(orphanages));
     },
 
 
@@ -43,7 +46,7 @@ export default {
         
         await orphanagesRepository.save(orphanage); // O método save executa a query definida pelo metodo create, recebendo a variavel que contem a isntruções para a query (orphanage)
     
-        return response.status(201).json(orphanage);
+        return response.status(201).json(orphanageView.render(orphanage));
     },
 
     async show(request: Request, response: Response) {
@@ -51,9 +54,11 @@ export default {
 
         const orphanagesRepository = getRepository(Orphanages);
 
-        const orphanage = await orphanagesRepository.findOneOrFail(id);
+        const orphanage = await orphanagesRepository.findOneOrFail(id, {
+            relations: ['images'] // Procura por relacionamento no campo images do model de orfanatos
+        });
 
-        return response.json(orphanage);
+        return response.json(orphanageView.render(orphanage));
     }
 
 }

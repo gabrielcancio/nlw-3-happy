@@ -35,7 +35,7 @@ export default class Orphanage {
 }
 
 /**
- * @OneToMany(() => Image) - Recebe dois parâmetros, o primeiro é uma função que retorna o tipo/formato do retorno(De cada elemento do relacionamento)
+ * @OneToMany(() => Image, image => image.orphanage) - Recebe dois parâmetros, o primeiro é uma função que retorna o tipo/formato do retorno(De cada elemento do relacionamento)
  *                         - O segundo parâmetro, para cada elemento do relacionamento (imagens) retorna o campo dentro deste elemento (imagem) que identifica o relacionamento inverso, o orfanato
  *                         - Resumindo: O primiero parâmetro é uma função que retorna o tipo dos elementos, noc aso é uma imagem, e o segundo parâmetro é uma função que pega cada elemento(imagem) e retorna o campo dentro desta imagem que identifíca o orfanato dono desta imagem
 */

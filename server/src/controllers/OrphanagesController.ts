@@ -21,7 +21,12 @@ export default {
             instructions,
             opening_hours,
             open_on_weekends
-        } = request.body;
+        } = request.body; // Pegando dados da requisição
+
+        const requestImages = request.files as Express.Multer.File[]; // Pegando as imagens que são obejtos e setando manualmente o formato delas como array de arquivos do multer(Express.Multer.File[])
+        const images = requestImages.map(image => {
+            return { path: image.filename }
+        });
     
         const orphanagesRepository = getRepository(Orphanages); // A função getRepository quando recebe a instância do model atribui todos o metodos do repositório da variável em orphanage repository
     
@@ -32,7 +37,8 @@ export default {
             about,
             instructions,
             opening_hours,
-            open_on_weekends
+            open_on_weekends,
+            images // Recebe o objetos esperados no model Image, como foi definido no relacionamento
         }); // Faz uma pré criação do orfanato no banco de dados com os dados do objeto data
         
         await orphanagesRepository.save(orphanage); // O método save executa a query definida pelo metodo create, recebendo a variavel que contem a isntruções para a query (orphanage)

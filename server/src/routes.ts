@@ -1,19 +1,9 @@
-import { Router, Request, Response } from 'express';
+import { Router } from 'express';
+import OrphanagesController from './controllers/OrphanagesController';
 
-const routes = Router();
+const routes = Router(); // Atribui o sistema de roteamento do express a variável routes
 
-routes.get('/', (request: Request, response: Response) => {
-    
-
-    const data = {
-        name: "Gabriel",
-        event: "Next Level Week",
-        type: 'omnistack',
-        version: 3
-    }
-
-    console.log('[Debugging...] Test');
-    return response.status(200).json(data);
-});
+routes.get('/orphanages', OrphanagesController.index);
+routes.post('/orphanages', OrphanagesController.create);
 
 export default routes;

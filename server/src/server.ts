@@ -1,5 +1,6 @@
 import express from 'express';
 import path from 'path';
+import cors from 'cors';
 import 'express-async-errors'; // Executando o express-async-erros para que ele faça a leitura dos erros assíncronos
 
 import './database/connection'; // Importando a conexão com o banco de dados
@@ -10,6 +11,7 @@ import errorHandler from './errors/handler'; // Função que lida com erros
 
 const app = express();
 
+app.use(cors()); // Permite a integração com algum front-end
 app.use(express.json()); // Habilita o entendimento do json pela aplicação
 app.use(routes);
 

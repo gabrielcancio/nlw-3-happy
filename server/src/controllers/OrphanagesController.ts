@@ -39,7 +39,7 @@ export default {
             about,
             instructions,
             opening_hours,
-            open_on_weekends,
+            open_on_weekends: open_on_weekends === 'true', // Corrigir bug do envio de true como string, implementar casting do yup
             images
         }
 

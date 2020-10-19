@@ -1,0 +1,1 @@
+declare module "*.png"; // Declarando todos os arquivos png como módulos importáveis

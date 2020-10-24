@@ -1,7 +1,7 @@
 import Orphanage from '../models/Orphanage';
 import imageView from './image_view';
 
-// A view faz uma seriliazação dosd ados, definindo o que será retornado na resposta da requisição HTTP
+// A view faz uma seriliazação dos dados, definindo o que será retornado na resposta da requisição HTTP
 
 export default {
   render(orphanage: Orphanage) { // Método para renderizar um único orfanato

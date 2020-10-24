@@ -105,7 +105,7 @@ Or
 $ npm start
 ``` 
 
-*PS: You neend change the baseURL to IP of your computer on path mobile/src/services/api.ts insed of api constant, on baseURL key. Like this:*
+*PS: You neend change the baseURL to IP of your computer on path mobile/src/services/api.ts inside of api constant, on baseURL key. Like this:*
 
 ```javascript
 // Replace "yourIP" to IP of your PC

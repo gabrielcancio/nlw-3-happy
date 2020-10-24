@@ -32,15 +32,15 @@
 - [Google Geolocation API](https://developers.google.com/maps/documentation/geolocation/overview?hl=pt&utm_source=google&utm_medium=cpc&utm_campaign=FY18-Q2-global-demandgen-paidsearchonnetworkhouseads-cs-maps_contactsal_saf&utm_content=text-ad-none-none-DEV_c-CRE_436364851126-ADGP_Hybrid%20%7C%20AW%20SEM%20%7C%20BKWS%20~%20Places%20%7C%20EXA%20%7C%20Google%20Maps%20Geolocation%20API-KWID_43700044401406153-aud-595609270041%3Akwd-300650646226-userloc_9074281&utm_term=KW_google%20geolocation%20api-ST_google%20geolocation%20api)
 
 ### **Mobile:**
-- [TypeScript]((https://www.typescriptlang.org/))
+- [TypeScript](https://www.typescriptlang.org/)
 - [Expo](https://expo.io/)
-- [Axios]((https://github.com/axios/axios))
+- [Axios](https://github.com/axios/axios)
 - [Google Maps Integration](https://developers.google.com/maps/documentation/geolocation/overview?hl=pt&utm_source=google&utm_medium=cpc&utm_campaign=FY18-Q2-global-demandgen-paidsearchonnetworkhouseads-cs-maps_contactsal_saf&utm_content=text-ad-none-none-DEV_c-CRE_436364851126-ADGP_Hybrid%20%7C%20AW%20SEM%20%7C%20BKWS%20~%20Places%20%7C%20EXA%20%7C%20Google%20Maps%20Geolocation%20API-KWID_43700044401406153-aud-595609270041%3Akwd-300650646226-userloc_9074281&utm_term=KW_google%20geolocation%20api-ST_google%20geolocation%20api)
 
 ### **Other used softwares :**
-- Insomnia
-- Beekeper Studio
-- Figma
+- [Insomnia](https://insomnia.rest/download)
+- [Beekeper Studio](https://www.beekeeperstudio.io/)
+- [Figma](https://www.figma.com)
 
 ---
 

@@ -96,7 +96,7 @@ $ npx typeorm migration:run
 ---
 
 ## :zap: Running
-On the specifica directory(server, web or mobile) and run the command:
+On the specific directory(server, web or mobile) and run the command:
 ```bash
 $ yarn start
 ```

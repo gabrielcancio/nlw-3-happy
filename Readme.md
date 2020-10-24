@@ -58,7 +58,7 @@ You can access the layout of project on Figma. (You need a Figma account )
 $ git clone https://github.com/gabrielcancio/nlw-3-happy.git
 ```
 
-2. On server direcotory run the command(**You need [yarn](https://yarnpkg.com/getting-started/install) or [npm](https://www.npmjs.com/get-npm) installed): 
+2. On server direcotory run the command(*You need [yarn](https://yarnpkg.com/getting-started/install) or [npm](https://www.npmjs.com/get-npm) installed*): 
 ```bash
 $ yarn
 ```

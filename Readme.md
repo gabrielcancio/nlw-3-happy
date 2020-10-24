@@ -115,4 +115,4 @@ const api = axios.create({
 });
 ```
 ---
-Developed with :yellow_heart: by gabriel Cancio!
+Developed with :yellow_heart: by Gabriel Cancio!

@@ -41,6 +41,7 @@
 - [Insomnia](https://insomnia.rest/download)
 - [Beekeper Studio](https://www.beekeeperstudio.io/)
 - [Figma](https://www.figma.com)
+- [VScode](https://code.visualstudio.com/)
 
 ---
 
@@ -54,7 +55,7 @@ You can access the layout of project on Figma. (You need a Figma account )
 
 ## :gear: Installing
 1. Make a clone of this repository with command: 
-```
+```bash
 $ git clone https://github.com/gabrielcancio/nlw-3-happy.git
 ```
 
@@ -105,7 +106,7 @@ Or
 $ npm start
 ``` 
 
-*PS: You neend change the baseURL to IP of your computer on path mobile/src/services/api.ts inside of api constant, on baseURL key. Like this:*
+*PS: You need to change the baseURL to IP of your computer on path mobile/src/services/api.ts inside of api constant, on baseURL key. Like this:*
 
 ```javascript
 // Replace "yourIP" to IP of your PC

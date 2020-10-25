@@ -35,7 +35,7 @@
 - [TypeScript](https://www.typescriptlang.org/)
 - [Expo](https://expo.io/)
 - [Axios](https://github.com/axios/axios)
-- [Google Maps Integration](https://developers.google.com/maps/documentation/geolocation/overview?hl=pt&utm_source=google&utm_medium=cpc&utm_campaign=FY18-Q2-global-demandgen-paidsearchonnetworkhouseads-cs-maps_contactsal_saf&utm_content=text-ad-none-none-DEV_c-CRE_436364851126-ADGP_Hybrid%20%7C%20AW%20SEM%20%7C%20BKWS%20~%20Places%20%7C%20EXA%20%7C%20Google%20Maps%20Geolocation%20API-KWID_43700044401406153-aud-595609270041%3Akwd-300650646226-userloc_9074281&utm_term=KW_google%20geolocation%20api-ST_google%20geolocation%20api)
+- [Expo Location](https://docs.expo.io/versions/latest/sdk/location/)
 
 ### **Other used softwares :**
 - [Insomnia](https://insomnia.rest/download)
@@ -65,7 +65,7 @@ $ yarn
 ```
 Or
 ```bash
-$ npm
+$ npm install
 ```
 3. On web direcotory run the command: 
 ```bash
@@ -73,7 +73,7 @@ $ yarn
 ```
 Or
 ```bash
-$ npm
+$ npm install
 ```
 4. On server direcotory run the command:
 ```bash
@@ -81,7 +81,7 @@ $ yarn
 ```
 Or
 ```bash
-$ npm
+$ npm install
 
 ```
 5. For the last, on server directory, run the migrations with the command:
@@ -97,7 +97,15 @@ $ npx typeorm migration:run
 ---
 
 ## :zap: Running
-On the specific directory(server, web or mobile) and run the command:
+1. You can run the API (server application) on server directory and runnig the follow command:
+```bash
+$ yarn dev
+```
+Or
+```bash
+$ npm dev
+```
+2. For the mobile and web applications, on the specific directory(mobile or web) run the command:
 ```bash
 $ yarn start
 ```
